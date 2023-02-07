@@ -10,7 +10,11 @@ function ColorList() {
   ];
 
   const colorElements = colors.map((colors) => {
-    return <li style={{ color: colors }}>{colors}</li>;
+    return (
+      <li key={colors} style={{ color: colors }}>
+        {colors}
+      </li>
+    );
   });
 
   return (
